@@ -1,0 +1,328 @@
+@media (min-width:1024px) and (max-width:1199px){
+	.middle_menu li{
+		font-size: 17px;
+	}
+
+	.middle_menu .icon{
+		font-size: 63px;
+	}
+
+	.callBack_Right input{
+		width: 170px;
+	}
+}
+
+@media (min-width: 950px) and (max-width: 1023px){	
+	.middle_menu li{
+		font-size: 15px;
+	}
+
+	.middle_menu .icon{
+		font-size: 40px;
+	}
+
+	.content_leftSide li{
+		font-size: 13px;
+	}
+
+	.callBack_Right input{
+		width: 170px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 949px){
+	.middle_menu li{
+		font-size: 13px;
+	}
+
+	.middle_menu .icon{
+		font-size: 35px;
+	}
+
+	.content_leftSide li{
+		font-size: 10px;
+	}
+
+	.bottom_menu li{
+		font-size: 25px;
+	}
+
+	.callBack_Right input{
+		width: 90px;
+		font-size: 12px;
+	}
+
+	.callBack_top h2{
+		font-size: 12px;
+	}
+
+	.content_rightSide h2{
+		width: 70%;
+	}
+
+	.contacts{
+		width: auto;
+		overflow: hidden;
+	}
+
+	.cont{
+		font-size: 15px;
+	}
+
+	.phone:hover{
+		margin-right: 30px;
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2);
+	}
+
+	.divTableRow .call a{
+		font-size: 12px;
+	}
+}
+
+@media (min-width: 461px) and (max-width: 767px){
+	.top_menu nav{
+		display: none;
+	}
+
+	.phone:hover{
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		font-size: 35px;
+		margin-right: 10px;
+	}
+
+	.middle_menu li{
+		font-size: 1px;
+	}
+
+	.middle_menu .icon{
+		font-size: 63px;
+	}
+
+	.bottom_menu li{
+		font-size: 12px;
+	}
+
+	.callBack_Right{
+		width: 100%;
+		padding-top: 1px;
+		text-align: left;
+	}
+
+	.callBack_Right input{
+		width: 170px;
+		margin-right: 87px;
+	}
+
+	.callBack_Right input[type="submit"]{
+		margin-left: 100px;
+	}
+
+	.callBack_Left{
+		display: none;
+	}
+
+	.content_leftSide{
+		display: none;
+	}
+
+	.divTableRow .call a:before{
+		content: '';
+		padding-right: 0px;
+	}
+
+	.divTableRow .call a{
+		border-radius: 3px;
+		padding: 2px;
+		font-size: 9px;
+	}
+
+	.contacts .geo{
+		display: none;
+	}
+
+	.contacts .mail{
+		display: none;
+	}
+
+	.contacts{
+		width: 90%;
+	}
+
+	.cont{
+		float: none;
+		width: 60%;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: 340px) and (max-width: 460px){
+	.top_menu nav{
+		display: none;
+	}
+
+	.phone:hover{
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		font-size: 35px;
+		margin-right: 10px;
+	}
+
+	.divTableCell h2{
+		font-size: 12px;
+	}
+
+	.middle_menu li{
+		font-size: 0px;
+	}
+
+	.middle_menu .icon{
+		font-size: 63px;
+	}
+
+	.bottom_menu li{
+		font-size: 12px;
+	}
+
+	.callBack_Right{
+		width: 100%;
+		padding-top: 1px;
+		text-align: left;
+	}
+
+	.callBack_Right input{
+		width: 170px;
+	}
+
+	.callBack_Right input[type="submit"]{
+		margin-left: 100px;
+	}
+
+	.callBack_Left{
+		display: none;
+	}
+
+	.content_leftSide{
+		display: none;
+	}
+
+	.divTableRow .call a:before{
+		content: '';
+		padding-right: 0px;
+	}
+
+	.divTableRow .call a{
+		border-radius: 3px;
+		padding: 2px;
+		font-size: 9px;
+	}
+
+	.contacts .geo{
+		display: none;
+	}
+
+	.contacts .mail{
+		display: none;
+	}
+
+	.contacts{
+		width: 90%;
+	}
+
+	.cont{
+		float: none;
+		width: 60%;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: 300px) and (max-width: 339px){
+	.top_menu nav{
+		display: none;
+	}
+
+	.phone{
+		font-size: 25px;
+	}
+
+	.phone:hover{
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		font-size: 35px;
+		margin-right: 10px;
+	}
+
+	.divTableCell h2{
+		font-size: 12px;
+	}
+
+	.middle_menu li{
+		font-size: 0px;
+	}
+
+	.middle_menu .icon{
+		font-size: 50px;
+	}
+
+	.bottom_menu li{
+		font-size: 12px;
+	}
+
+	.callBack_Right{
+		width: 100%;
+		padding-top: 1px;
+		text-align: left;
+	}
+
+	.callBack_Right input{
+		width: 150px;
+	}
+
+	.callBack_Right input[type="submit"]{
+		margin-left: 100px;
+	}
+
+	.callBack_Left{
+		display: none;
+	}
+
+	.content_leftSide{
+		display: none;
+	}
+
+	.divTableRow .call a:before{
+		content: '';
+		padding-right: 0px;
+	}
+
+	.divTableRow .call a{
+		border-radius: 3px;
+		padding: 2px;
+		font-size: 9px;
+	}
+
+	.contacts .geo{
+		display: none;
+	}
+
+	.contacts .mail{
+		display: none;
+	}
+
+	.contacts{
+		width: 90%;
+	}
+
+	.cont{
+		float: none;
+		width: 60%;
+		margin: 0 auto;
+		font-size: 14px;
+	}
+
+	.divTableRow .price{
+		font-size: 10px;
+	}
+}
+
