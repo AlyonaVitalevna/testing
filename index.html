@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru-ru" dir="ltr" class="">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="index, follow" />
+		<title>Тест</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" type="text/css" href="css/style-modal.css" />
+		<link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<link rel="stylesheet" href="css/media.css" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Vollkorn:400,400i,600,700,900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			function AjaxFormRequest(result_id,formMain,url) {
+				jQuery.ajax({
+					url:	 url,
+					type:	 "POST",
+					dataType: "html",
+					data: jQuery("#"+formMain).serialize(), 
+					success: function(response) {
+						document.getElementById(result_id).innerHTML = response;
+					},
+					error: function(response) {
+						document.getElementById(result_id).innerHTML = "<p>Возникла ошибка при отправке формы. Попробуйте еще раз</p>";
+					}
+				});
+				$(':input','#formMain')
+				.not(':button, :submit, :reset, :hidden')
+				.val('')
+				.removeAttr('checked')
+				.removeAttr('selected');
+			}
+		</script>
+		<script src="js/jquery.bxslider.min.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="js/jquery.fitvids.js"></script>
+	</head>
+	<body>
+		<!-- Модальное окно Форма обратной связи -->
+			<a href="#x" class="overlay" id="callBack"></a>
+			<div class="popup popup_1">
+				<div class="mainForm">
+					<div class="form">
+						<div id="messegeResult">
+							<p style="font-size: 1.5vw; font-weight: 600;">Оставьте ваши контакты<br />и мы обязательно Вам перезвоним</p>
+						</div>
+						<form method="post" action="" id="formMain" name="formMain">
+							<input id="name" type="text" name="name" placeholder="Введите ваше имя" maxlength="30" autocomplete="off" required/>
+							<input id="telephone" type="Tel" name="telephone" placeholder="Введите ваш телефон" maxlength="30" autocomplete="off" required/>
+							<input id="button" class="applicationButton" type="button" value="перезвоните мне" onclick="AjaxFormRequest('messegeResult', 'formMain', 'callBack.php')"/>
+						</form>
+					</div>
+				</div>
+				<a class="close" title="Закрыть" href="#close"></a>
+			</div>
+<!-- ********************************* -->
+<script>jQuery(document).ready(function(){
+ jQuery('.bxslider').bxSlider({
+  			mode: 'fade', 
+  	        captions: true,                  
+            easing: 'easeInOutQuad',
+            controls: true,         
+            startSlide: 1,         
+            infiniteLoop: true,    
+            pager: false,            
+            auto: true,          
+            pause: 9000,            
+            speed: 200,
+            adaptiveHeight: false,  
+            autoHover: true,            
+            useCSS: false      
+  });
+});</script>
+		<div class="wrapper">
+				<header class="container">
+					<div class="block">
+						<a href="/"><div class="logo_1"></div></a></div>
+					<div class="block">
+						<a href="/"><div class="logo_2"></div></a>
+					</div>
+					<div class="block">
+						<div class="rasp">Пн-пт 9 - 21
+							Сб-вс 9 - 21</div>
+					</div>
+					<div class="block">
+						<div class="call"><a href="tel:88125555555">+7 (812) 555-55-55</a>
+						<a href="#callBack">Обратный звонок</a></div>
+					</div>
+				</header>
+				<main>
+					<div class="container">
+						<h2>Жилой комплекс "Охтинская дуга"</h2>
+				      <div class="slider left">
+							<ul class="bxslider">
+									<li><img src="img/3.jpg"></li>
+									<li><img src="img/4.JPG"></li> 
+									<li><img src="img/5.JPG"></li> 
+							</ul>
+						</div>
+					  <form method="post" action="" id="formMain" name="formMain">
+					  <div class="form1">
+				      <div>
+				      	<h3>Квартиры с отделкой -33%
+				        	<b>до конца сентября</b>
+				      	</h3>
+				      </div>
+				      <div>
+				      	<input id="name" type="text" name="name" placeholder="Имя" maxlength="30" autocomplete="off" required/>
+				      </div>
+					  <div>
+					  	<input id="telephone" type="Tel" name="telephone" placeholder="Телефон" maxlength="30" autocomplete="off" required/>
+					  </div>	
+					  <div>
+					  	<input id="button" class="applicationButton" type="button" value="Получить скидку" onclick="AjaxFormRequest('messegeResult', 'formMain', 'callBack.php')"/>
+					  </div>
+					  </div>
+						</form>
+					<div class="clearfix"></div>
+					<h2>Всеволожский район, пос. Мурино</h2>
+					<div class="maps" style="width: 600px; float: right">
+						<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac948e9b2c3cf3690e571bbb40b7c4a10573b70bf1283364b51d16f8738a0d73a&amp;lang=ru_RU&amp;scroll=true&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+					</div>
+					<div class="text">Адрес : г.Санкт-Петербург,  ул. Подвойского д.56
+					Тел.:  + 7 (812) 455-55-99
+					М. Девяткино 5 мин на транспорте
+					Материал: Кирпич
+					Отделка: Чистовая
+
+					Ипотека:  8%
+					Рассрочка:  0%
+					Договор:  214 ФЗ
+					Военная ипотека
+					Материнский капитал
+					</div>
+					<div class="text left">
+						+парки
+						+паркинг
+						+консъерж
+						+дворы без машин
+					</div>
+					<div class="text left">
+						+школы, сады
+						+магазины
+						+закрытая территория
+						+больницы
+					</div>
+				<div class="clearfix"></div>
+				<h2 class="center">Планировки</h2>
+				<nav>
+					<ul class="plan">
+						<li>Студия</li>
+						<li>1 ком.кв</li>
+						<li>2 ком.кв</li>
+						<li>3 ком.кв</li>
+					</ul>
+				</nav>
+				<div class="layOut">
+					<div class="block">
+						<img src="img/7.jpg" alt="">
+						<div class="text">Цена:  1600000 рублей
+							Общая площадь: 77,5 м2
+							Отделка: Подчистовая
+							<a href=""><div class="applicationButton">Подробнее</div></a></div>
+					</div>
+					<div class="block">
+						<img src="img/8.jpg" alt="">
+						<div class="text">Цена:  1600000 рублей
+							Общая площадь: 77,5 м2
+							Отделка: Подчистовая
+							<a href=""><div class="applicationButton">Подробнее</div></a></div>
+					</div>
+					<div class="block">
+						<img src="img/7.jpg" alt="">
+						<div class="text">Цена:  1600000 рублей
+							Общая площадь: 77,5 м2
+							Отделка: Подчистовая
+							<a href=""><div class="applicationButton">Подробнее</div></a></div>
+					</div>
+				</div>
+				<div class="picking">
+					<h3 class="center">Персональный подбор вариантов квартир</h3>
+					<form id="application" action="application.php" method="POST" name="application">
+  						<div class="center">
+  	 						<span>Имя</span> <input name="name" id="zayavkaName" maxlength="20" placeholder="Имя" required />
+  							<span>Телефон</span> <input name="telephone" type="Tel" id="applicationTelephone" maxlength="20" placeholder="Телефон" required/>
+ 						</div>
+						<div class="moreOption">
+   							<input class="adapt1" type="checkbox" name="adapt[]" value="Студия"/><span class="check">Студия</span>
+   							<input class="adapt2" type="checkbox" name="adapt[]" value="1 ком. кв."/><span class="check">1 ком. кв.</span>
+   							<input class="adapt" type="checkbox" name="adapt[]" value="2 ком. кв."/><span class="check">2 ком. кв.</span>
+   							<input class="adapt3" type="checkbox" name="adapt[]" value="3 ком. кв."/><span class="check">3 ком. кв.</span>
+						</div>
+						<div class="moreOption small">
+							<span>Этаж от</span> <input type="number" min="1" max="30" 
+					    value="1" step="1" /> 
+					    	<span>до</span> <input type="number" min="1" max="30" value="" step="1" /> 
+					    	<input class="adapt4" type="checkbox" name="adapt[]" value="ни первый, ни последний"/><span class="check">ни первый, ни последний</span>
+						</div> 
+						<div class="moreOption small">
+					       <input class="adapt5" type="checkbox" name="adapt[]" value="Окна во двор"/><span class="check">Окна во двор</span>
+					       <input class="adapt6" type="checkbox" name="adapt[]" value="Красивый вид из ококн"/><span class="check">Красивый вид из окон</span>
+					       <input class="adapt7" type="checkbox" name="adapt[]" value="Не угловые"/><span class="check">Не угловые</span>
+					       <input class="adapt8" type="checkbox" name="adapt[]" value="Не торцовые"/><span class="check">Не торцовые</span>
+					       <input class="adapt8" type="checkbox" name="adapt[]" value="Не торцовые"/><span class="check">Не у лифта</span>
+					    </div>
+					    <div class="moreOption">
+							<span>Сумма до</span> <input type="number" min="500000"
+					    	value="2000000" step="100000" /> 
+					    	<span>Сдача объекта: </span>
+					   			<select class="tPlan" name="tPlan">
+							      <option value="Через год">Через год</option>
+							      <option value="Через 2 года">Через 2 года</option>
+					  			  <option value="Через 3 года">Через 3 года</option>
+								</select>
+						</div>
+						<div class="moreOption" style="text-align: right;"> 
+							<span class="add small">* согласие на обработку данных</span>
+					  		<button class="applicationButton" type="submit" form="application">Подобрать</button>
+					  	</div>
+					</form>
+				</div>
+				<h2 class="center">Отделка</h2>
+				<script>jQuery(document).ready(function(){
+jQuery('.bxslider2').bxSlider({
+   nextText: '',
+   prevText: '',
+   pagerCustom: '#bx-pager',
+   adaptiveHeight: true
+});
+});</script>
+<div class="slider2">
+<ul class="bxslider2">
+  <li><img src="img/3.jpg"/></li>
+  <li><img src="img/4.jpg"/></li>
+  <li><img src="img/5.jpg"/></li>
+  <li><img src="img/4.jpg"/></li>
+ </ul>
+<div id="bx-pager">
+  <a data-slide-index="0" href=""><img src="img/3.jpg" /></a>
+  <a data-slide-index="1" href=""><img src="img/4.jpg" /></a>
+  <a data-slide-index="2" href=""><img src="img/5.jpg" /></a>
+  <a data-slide-index="3" href=""><img src="img/4.jpg" /></a>
+</div>
+</div>
+<div class="form3">
+<h3 class="center">Записаться на просмотр отделки</h3>
+<form method="post" action="" id="formMain" name="formMain">
+		<input id="name" type="text" name="name" placeholder="Имя" maxlength="30" autocomplete="off" required/>		 
+	  	<input id="telephone" type="Tel" name="telephone" placeholder="Телефон" maxlength="30" autocomplete="off" required/>
+	  	<input id="button" class="applicationButton" type="button" value="Записаться" onclick="AjaxFormRequest('messegeResult', 'formMain', 'callBack.php')"/>		  		     
+</form>
+</div>	
+<h2 class="center">Фотогалерея</h2>
+<div class="slider2">
+<ul class="bxslider2">
+  <li><img src="img/3.jpg"/></li>
+  <li><img src="img/4.jpg"/></li>
+  <li><img src="img/5.jpg"/></li>
+  <li><img src="img/4.jpg"/></li>
+ </ul>
+<div id="bx-pager">
+  <a data-slide-index="0" href=""><img src="img/3.jpg" /></a>
+  <a data-slide-index="1" href=""><img src="img/4.jpg" /></a>
+  <a data-slide-index="2" href=""><img src="img/5.jpg" /></a>
+  <a data-slide-index="3" href=""><img src="img/4.jpg" /></a>
+</div>
+</div>
+<div class="form3">
+<h3 class="center">Записаться на экскурсию</h3>
+<form method="post" action="" id="formMain" name="formMain">
+		<input id="name" type="text" name="name" placeholder="Имя" maxlength="30" autocomplete="off" required/>		 
+	  	<input id="telephone" type="Tel" name="telephone" placeholder="Телефон" maxlength="30" autocomplete="off" required/>
+	  	<input id="button" class="applicationButton" type="button" value="Записаться" onclick="AjaxFormRequest('messegeResult', 'formMain', 'callBack.php')"/>		  		     
+</form>
+</div>	
+					</div>
+					
+<hr/>
+<h2 class="center">Как оплатить</h2>
+<div class="form5">
+	<form id="application" action="application.php" method="POST" name="application">
+		<div class="moreOption center">
+			<input class="adapt1" type="checkbox" name="adapt[]" value="Ипотека"/><span class="check">Ипотека</span>
+			<input class="adapt2" type="checkbox" name="adapt[]" value="Рассрочка"/><span class="check">Рассрочка</span>
+			<input class="adapt" type="checkbox" name="adapt[]" value="Военная ипотека"/><span class="check">Военная ипотека</span>
+			<input class="adapt3" type="checkbox" name="adapt[]" value="Материнский капитал"/><span class="check">Материнский капитал</span>
+		</div>
+		<div class="moreOption small center">
+			Укажите удобные для вас условия оплаты и мы подберем возможные варианты
+		</div>
+		<div class="block"> 
+			<div class="moreOption center">
+				<input id="name" type="text" name="name" placeholder="Первоночальный взнос" maxlength="30" autocomplete="off" required/>		 
+				<input id="name" type="text" name="name" placeholder="Имя" maxlength="30" autocomplete="off" required/>
+			</div>
+			<input class="adapt small" type="checkbox" name="adapt[]" value="без взноса"/><span class="check">Без взноса</span>
+			<div class="moreOption center">
+				<input id="name" type="text" name="name" placeholder="Ежемесячный платеж" maxlength="30" autocomplete="off" required/>		 
+				<input id="name" type="tel" name="name" placeholder="Телефон" maxlength="30" autocomplete="off" required/>
+			</div>
+		</div>
+	</form>
+</div>
+<hr/>
+				</main>
+				<footer class="container">
+					<div class="block">
+						<a href="/"><div class="logo_1"></div></a>
+					</div>
+					<div class="block">
+						<div class="text_footer small">Вся информация на сайте носит справочный характер и 
+						не является публичной офертой, определяемой положениями 
+						Статьи 437 Гражданского кодекса Российской Федерации.
+						</div>
+					</div>
+					<div class="block">
+						<div class="call"><a class="big" href="tel:88125555555">+7 (812) 555-55-55</a>
+							<a class="small" href="#callBack">Обратный звонок</a>
+						</div>
+					</div>
+				</footer>
+		</div>
+				
