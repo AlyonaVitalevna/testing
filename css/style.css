@@ -318,6 +318,18 @@ footer {
 	font-size: 40px;
 }
 
+.popup_1 {
+    max-width: 520px;
+    padding-bottom: 30px;
+}
+
+.mainForm input {
+	display: block;
+    margin: 15px auto;
+}
+
+
+
 
 
 
