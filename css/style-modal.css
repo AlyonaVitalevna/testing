@@ -52,8 +52,7 @@ opacity: 1;
 /* стили модального окна */
 .popup {
 top: 0;
-
-left: 50%;
+left: 25%;
 z-index: 10000;
 margin: 0 auto;
 
@@ -124,7 +123,7 @@ box-shadow: 0px 0px 10px #000;
 text-align: center;
 text-decoration: none;
 font-weight: bold;
-line-height: 20px;
+line-height: 13px;
 -webkit-transition: background-color ease .7s;
 -moz-transition:  background-color ease .7s;
 -ms-transition:  background-color ease .7s;
