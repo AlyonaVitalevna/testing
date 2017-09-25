@@ -245,19 +245,27 @@ span.add.small {
   max-width: 100%;
   display: block;
 }
-.slider2 #bx-pager {
+.slider2 #bx-pager,
+.slider2 #bx-pager-2 {
   margin-top: 20px;
   text-align: center;
 }
-.slider2 #bx-pager a {margin: 0 3px;}
-.slider2 #bx-pager a img {
+.slider2 #bx-pager a,
+.slider2 #bx-pager-2 a {margin: 0 3px;}
+.slider2 #bx-pager a img,
+.slider2 #bx-pager-2 a img {
   padding: 3px;
   border: 1px solid #ccc;
   width: 80px;
   transition: .4s ease-in-out;
   height: 50px;
 }
-.slider2 #bx-pager a.active img {border: 1px solid #D4104E;}
+.slider2 #bx-pager a.active img,
+.slider2 #bx-pager-2 a.active img {border: 1px solid #D4104E;}
+.slider2 .bx-prev {
+  left: 0;
+  border-radius: 0 5px 5px 0;
+}
 .slider2 .bx-prev {
   left: 0;
   border-radius: 0 5px 5px 0;
