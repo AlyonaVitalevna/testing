@@ -328,6 +328,23 @@ footer {
     margin: 15px auto;
 }
 
+.popup_3 {
+    max-width: 73%;
+    padding-bottom: 20px;
+}
+
+.popup_3 img {
+    width: 50%;
+    float: left;
+    margin-right: 20px;
+}
+
+.popup_3 .text {
+    line-height: 40px;
+    white-space: normal;
+    font-weight: bold;
+}
+
 
 
 
